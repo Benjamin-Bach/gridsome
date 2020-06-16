@@ -7,21 +7,14 @@
 
 module.exports = function (api) {
   api.loadSource(actions => {
-    const posts = actions.addCollection('Post')
+    const posts = actions.addCollection('BlogPost')
     const tags = actions.addCollection('Tag')
 
     // makes all ids in the `tags` field reference a `Tag`
     posts.addReference('tags', 'Tag')
 
-    tags.addNode({
-      id: '1',
-      title: 'The author'
-    })
 
-    posts.addNode({
-      id: '1',
-      title: 'A post',
-      tags: ['1']
-    })
+
+
   })
 }

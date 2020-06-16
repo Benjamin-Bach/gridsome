@@ -9,6 +9,6 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto:300'
+    href: 'https://fonts.googleapis.com/css?family=EB+Garamond&display=swap'
   })
 }

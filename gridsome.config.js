@@ -12,6 +12,12 @@ module.exports = {
       options: {
         typeName: 'BlogPost',
         path: './content/**/*.md',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        },
         remark:{
           plugins: [
             ['@gridsome/remark-prismjs', {transformInlineCode: true}]
@@ -33,6 +39,7 @@ module.exports = {
           return `/${node.fileInfo.directory.replace('./','')}/${node.fileInfo.name}`
         }
       }
-    ]
+    ],
+    Tag: '/tags/:title'
   }
 }

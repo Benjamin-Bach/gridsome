@@ -18,7 +18,7 @@ query ($id: ID!) {
     belongsTo {
       edges {
         node {
-          ... on Post {
+          ... on BlogPost {
             id
             title
             path

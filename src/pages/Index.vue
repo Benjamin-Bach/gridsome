@@ -8,6 +8,7 @@
 
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
       <h2><g-link :to="edge.node.path" class="read">{{edge.node.title}}</g-link></h2>
+      <TagsList :tags="egde.node.tags"/>
       <span>{{ edge.node.teaser }}</span> <span>[{{ edge.node.timeToRead }} mn de lecture]</span>
     </div>
 
@@ -16,9 +17,13 @@
 
 <script>
 
+import TagsList from "@/components/TagsList";
 export default {
   metaInfo: {
     title: 'Hello, world!'
+  },
+  components: {
+    TagsList
   }
 }
 </script>
@@ -42,6 +47,10 @@ query {
         teaser
         path
         timeToRead
+        tags{
+          id
+          path
+        }
         fileInfo {
           directory
         }
