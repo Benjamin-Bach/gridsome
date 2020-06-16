@@ -9,6 +9,7 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "content"
+    path: "{{slug}}"
     create: true
     slug: "{{slug}}"
     fields:
