@@ -8,8 +8,7 @@
 
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
       <h2><g-link :to="edge.node.path" class="read">{{edge.node.title}}</g-link></h2>
-      <span>{{ edge.node.path }}</span><br>
-      <span>{{ edge.node.timeToRead }} mn</span>
+      <span>{{ edge.node.teaser }}</span> <span>[{{ edge.node.timeToRead }} mn de lecture]</span>
     </div>
 
   </Layout>
@@ -40,7 +39,7 @@ query {
       node {
         id
         title
-        content
+        teaser
         path
         timeToRead
         fileInfo {

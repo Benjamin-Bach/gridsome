@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <h1 v-html="$page.post.title"/>
-    <TaxonomyList :path="fake-path"/>
     <article v-html="$page.post.content" />
   </Layout>
 </template>
@@ -12,18 +11,6 @@ query BlogPost ($path: String!) {
     id
     title
     content
-    taxonomy
   }
 }
 </page-query>
-
-<script>
-
-import TaxonomyList from "@/components/TaxonomyList";
-export default {
-  components: {
-    TaxonomyList
-  }
-};
-
-</script>

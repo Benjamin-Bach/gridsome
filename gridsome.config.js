@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: "Ben's notepad",
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -13,7 +13,9 @@ module.exports = {
         typeName: 'BlogPost',
         path: './content/**/*.md',
         remark:{
-
+          plugins: [
+            ['@gridsome/remark-prismjs', {transformInlineCode: true}]
+          ]
         }
       }
     },
@@ -27,7 +29,6 @@ module.exports = {
   templates: {
     BlogPost: [
       {
-
         path: (node) => {
           return `/${node.fileInfo.directory.replace('./','')}/${node.fileInfo.name}`
         }
