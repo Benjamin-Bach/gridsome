@@ -13,7 +13,26 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Dossier2", name: "subfolder", widget: "string"}
+      - {label: "Dossier", name: "subfolder", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Profile"
+        name: "profile"
+        widget: "object"
+        fields:
+          - {label: "Public", name: "public", widget: "boolean", default: true}
+          - {label: "Name", name: "name", widget: "string"}
+          - label: "Birthdate"
+            name: "birthdate"
+            widget: "date"
+            default: ""
+            format: "MM/DD/YYYY"
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Street Address", name: "street", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "Postal Code", name: "post-code", widget: "string"}

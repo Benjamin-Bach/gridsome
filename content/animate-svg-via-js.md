@@ -9,15 +9,7 @@ teaser: Un premier article sur un "générateur d'animation svg", développé da
   découvrir les animations svg...
 subfolder: /
 date: 2020-06-18T08:30:27.345Z
-testimonials:
-  - quote: Everything is awesome!
-    author:
-      name: Emmet
-      avatar: svg-logo.svg
-  - quote: Everything is awesome!
-    author:
-      name: Emmet
-      avatar: /img/emmet.jpg
+
 ---
 [GitHub Repo](https://github.com/Benjamin-Bach/ECVWorkShop-AnimateSVG)
 
