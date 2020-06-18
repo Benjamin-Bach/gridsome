@@ -12,8 +12,9 @@ date: 2020-06-18T08:30:27.345Z
 ---
 [GitHub Repo](https://github.com/Benjamin-Bach/ECVWorkShop-AnimateSVG)
 
-
 # ECVWorkShop-AnimateSVG
+
+![](svg-logo.svg)
 
 This project is dedicated to serve as background during the ecv workshop (2020). It tends to facilitate the use of SVG animations, native or through CSS.
 
