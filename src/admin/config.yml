@@ -9,11 +9,11 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "content"
-    path: "{{subfolder}}/{{slug}}"
+    # path: "{{subfolder}}/{{slug}}"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Dossier", name: "subfolder", widget: "string"}
+      # - {label: "Dossier", name: "subfolder", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
