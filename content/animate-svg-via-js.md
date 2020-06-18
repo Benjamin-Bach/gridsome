@@ -13,7 +13,7 @@ thumbnail: svg-logo.svg
 ---
 [GitHub Repo](https://github.com/Benjamin-Bach/ECVWorkShop-AnimateSVG)
 
-![](svg-logo.svg)
+![](300x300.png)
 
 # ECVWorkShop-AnimateSVG
 
@@ -31,10 +31,7 @@ Declare an element svg in html file. Create a first path, rect, polygon or any s
 <rect id="myRect1" x="0" y="0" width="100" height="200" fill="red" />
 ```
 
-Then, after this shape, create a g (group) element and asign it a data-name attribute. Inside this group, declare your first animation an set the begin attribute to indefinite.
-(You can use animateMotion too, see the sample-2.html)
-
-
+Then, after this shape, create a g (group) element and asign it a data-name attribute. Inside this group, declare your first animation an set the begin attribute to indefinite. (You can use animateMotion too, see the sample-2.html)
 
 ```html
 <rect id="myRect1" x="0" y="0" width="100" height="200" fill="red" />
@@ -213,5 +210,4 @@ Each click set the body class has data-name attribute animation value, so your c
 
 ### JS part
 
-You can use the animationBegin() and animationEnd() functions in app.js. They are callback functions which can use e, stepName, anim has argument.
-e is the click event, stepName is the name of the step played, anim is the animation object.
+You can use the animationBegin() and animationEnd() functions in app.js. They are callback functions which can use e, stepName, anim has argument. e is the click event, stepName is the name of the step played, anim is the animation object.
