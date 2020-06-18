@@ -1,9 +1,13 @@
 ---
 title: Autre
-tags: 
+tags:
   - SVG
   - JS
   - test
 teaser: extrait...
+subfolder: /
+date: 2020-06-18T12:06:34.241Z
 ---
 texte...
+
+![](300x300.png)
