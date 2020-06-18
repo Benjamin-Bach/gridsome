@@ -12,6 +12,7 @@ date: 2020-06-18T08:30:27.345Z
 ---
 [GitHub Repo](https://github.com/Benjamin-Bach/ECVWorkShop-AnimateSVG)
 
+![](svg-logo.svg)
 
 # ECVWorkShop-AnimateSVG
 
