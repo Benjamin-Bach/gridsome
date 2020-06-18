@@ -14,6 +14,7 @@ date: 2020-06-18T08:30:27.345Z
 
 # ECVWorkShop-AnimateSVG
 
+![](/uploads/400x400.png)
 
 This project is dedicated to serve as background during the ecv workshop (2020). It tends to facilitate the use of SVG animations, native or through CSS.
 
