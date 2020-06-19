@@ -9,3 +9,7 @@ subfolder: /
 date: 2020-06-18T12:06:34.241Z
 ---
 texte...
+
+
+
+![](/uploads/300x300.png)
