@@ -13,6 +13,6 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-netlify-cms-paths": "^0.3.1",
-    "netlify-cms": "^2.10.50"
+    "netlify-cms": "^2.10.51"
   }
 }
