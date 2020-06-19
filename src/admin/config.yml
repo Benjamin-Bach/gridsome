@@ -9,6 +9,8 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "content"
+    media_folder: "/static/uploads"
+    public_folder: "/uploads"
     # path: "{{subfolder}}/{{slug}}"
     create: true
     slug: "{{slug}}"
