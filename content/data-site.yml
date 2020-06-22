@@ -1,0 +1,11 @@
+title: Titre de mon site
+tags:
+  - SVG
+  - JS
+  - ECV
+  - Autre
+footerLinks:
+  - title: Titre de mon lien
+    url: url de mon lien
+  - title: Titre de mon autre lien
+    url: url de mon autre lien
