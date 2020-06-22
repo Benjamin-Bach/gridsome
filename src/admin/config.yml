@@ -1,6 +1,10 @@
 backend:
-  name: github
-  repo: Benjamin-Bach/gridsome
+  # name: github
+  # repo: Benjamin-Bach/gridsome
+  name: git-gateway
+  branch: master
+  local_backend:
+    url: http://dev.gridsome
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -19,3 +23,10 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "References"
+        name: "refs"
+        widget: "relation"
+        collection: "posts"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title", "date"]
