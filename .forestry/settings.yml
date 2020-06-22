@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/data-site.yml
   label: data site
-  match: "**/*"
 - type: directory
   path: content
   label: posts
