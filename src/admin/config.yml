@@ -1,10 +1,6 @@
 backend:
-  # name: github
-  # repo: Benjamin-Bach/gridsome
-  name: git-gateway
-  branch: master
-  local_backend:
-    url: http://dev.gridsome
+  name: github
+  repo: Benjamin-Bach/gridsome
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
