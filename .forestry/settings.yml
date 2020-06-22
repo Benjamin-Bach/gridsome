@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: refs
+  label: refs
+  create: all
+  match: "**/*"
 - type: document
   path: content/data-site.yml
   label: data site
