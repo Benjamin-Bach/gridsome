@@ -11,6 +11,7 @@ collections:
     folder: "content"
     media_folder: "/static/uploads"
     public_folder: "/uploads"
+    summary: "{{title}} {{slug}}"
     # path: "{{subfolder}}/{{slug}}"
     create: true
     slug: "{{slug}}"
@@ -26,6 +27,25 @@ collections:
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title", "date"]
+  - name: pages
+    label: Pages
+    label_singular: 'Page'
+    folder: content/pages
+    create: true
+    # adding a nested object will show the collection folder structure
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}--' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
   - name: "refs"
     label: "Références"
     folder: "refs"
