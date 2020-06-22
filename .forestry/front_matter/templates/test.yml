@@ -17,3 +17,5 @@ fields:
 - type: datetime
   name: date
   label: date
+pages:
+- content/test/un-fichier-dans-test.md
