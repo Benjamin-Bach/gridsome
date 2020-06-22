@@ -6,16 +6,41 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Données du site"
+        name: "data-site"
+        file: "content/data-site.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+  - label: 'Tags'
+    name: 'tags'
+    editor:
+      preview: false
+    create: true
+    folder: 'content/tags'
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
   - name: "posts"
     label: "Posts"
     folder: "content"
     media_folder: "/static/uploads"
     public_folder: "/uploads"
-    summary: "{{title}} {{slug}}"
+    summary: "{{title}} {{date}}"
     # path: "{{subfolder}}/{{slug}}"
     create: true
     slug: "{{slug}}"
     fields:
+      - label: "Tags"
+        name: "tags"
+        widget: "relation"
+        collection: "tags"
+        valueField: "title"
+        searchFields: ["title"]
+        multiple: true
       # - {label: "Dossier", name: "subfolder", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
