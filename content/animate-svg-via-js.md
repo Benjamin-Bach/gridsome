@@ -1,18 +1,21 @@
 ---
-title: Animate SVG via JS
 tags:
   - SVG
   - JS
   - ECV
+title: Animate SVG via JS
 teaser: Un premier article sur un "générateur d'animation svg", développé dans
   le cadre d'un workshop proposé à des étudiants en design afin de leur faire
   découvrir les animations svg...
 subfolder: /
 date: 2020-06-18T08:30:27.345Z
+refs: Animate SVG via JS
 ---
 [GitHub Repo](https://github.com/Benjamin-Bach/ECVWorkShop-AnimateSVG)
 
 # ECVWorkShop-AnimateSVG
+
+![](/uploads/300x600.png)
 
 ![](/uploads/400x400.png)
 
