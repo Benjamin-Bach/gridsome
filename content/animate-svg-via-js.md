@@ -15,7 +15,7 @@ refs: Animate SVG via JS
 
 # ECVWorkShop-AnimateSVG
 
-![](/uploads/300x600.png)
+![](/uploads/100x120.png)
 
 ![](/uploads/400x400.png)
 
