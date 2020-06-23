@@ -55,6 +55,8 @@ collections:
   - name: pages
     label: Pages
     label_singular: 'Page'
+    media_folder: ""
+    public_folder: ""
     folder: content/pages
     create: true
     # adding a nested object will show the collection folder structure

@@ -20,7 +20,10 @@ module.exports = {
         },
         remark:{
           plugins: [
-            ['@gridsome/remark-prismjs', {transformInlineCode: true}]
+            [
+              '@gridsome/remark-prismjs',
+              {transformInlineCode: true}
+            ]
           ]
         }
       }
@@ -32,12 +35,7 @@ module.exports = {
         modulePath: `src/admin/index.js`
       }
     },
-    {
-      use: 'gridsome-plugin-netlify-cms-paths',
-      options: {
-        contentTypes: ['BlogPost']
-      }
-    }
+
   ],
   templates: {
     BlogPost: [

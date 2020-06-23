@@ -1,7 +1,4 @@
 ---
-tag:
-  - List [ "SVG", "JS", "ECV" ]
-  - List [ "SVG", "JS", "test" ]
 tags:
   - Test
 title: titre tasgs

@@ -64,4 +64,8 @@ a{
   opacity: 0;
 }
 
+code[class*="language-"] *{
+  font-size: 1rem;
+}
+
 </style>

@@ -5,11 +5,11 @@
     <g-image alt="Example image" src="~/favicon.png" width="100" />
 
     <h1>Hello, world!</h1>
-
+    <TagsList :tags="$page.tags.edges"/>
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
       <h2><g-link :to="edge.node.path" class="read">{{edge.node.title}}</g-link></h2>
       <TagsList :tags="edge.node.tags"/>
-      <span>{{ edge.node.teaser }}</span> <span>[{{ edge.node.timeToRead }} mn de lecture]</span>
+      <span v-html="edge.node.teaser"/> <span>[{{ edge.node.timeToRead }} mn de lecture]</span>
     </div>
 
   </Layout>
@@ -39,6 +39,14 @@ query {
   metadata {
     siteName
   }
+  tags: allTag{
+    edges {
+      node{
+        id
+        path
+      }
+    }
+  }
   posts: allBlogPost{
     edges {
       node {
@@ -59,3 +67,6 @@ query {
   }
 }
 </page-query>
+
+
+

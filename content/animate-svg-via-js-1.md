@@ -4,7 +4,7 @@ tags:
   - SVG
   - JS
   - ECV
-teaser: Un premier article sur un "générateur d'animation svg", développé dans
+teaser: Un premier <ul><li>un</li><li>deux</li></ul>article sur un "générateur d'animation svg", développé dans
   le cadre d'un workshop proposé à des étudiants en design afin de leur faire
   découvrir les animations svg...
 subfolder: /
