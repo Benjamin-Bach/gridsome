@@ -35,6 +35,19 @@ module.exports = {
         modulePath: `src/admin/index.js`
       }
     },
+    {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        searchFields: ['title'],
+        collections: [
+          {
+            typeName: 'BlogPost',
+            indexName: 'BlogPost',
+            fields: ['title']
+          }
+        ]
+      }
+    }
 
   ],
   templates: {

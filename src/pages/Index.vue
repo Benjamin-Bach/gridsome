@@ -6,6 +6,7 @@
 
     <h1>Hello, world!</h1>
     <TagsList :tags="$page.tags.edges"/>
+    <FlexSearch/>
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
       <h2><g-link :to="edge.node.path" class="read">{{edge.node.title}}</g-link></h2>
       <TagsList :tags="edge.node.tags"/>
@@ -18,12 +19,14 @@
 <script>
 
 import TagsList from "@/components/TagsList";
+import FlexSearch from "@/components/FlexSearch";
 export default {
   metaInfo: {
     title: 'Hello, world!'
   },
   components: {
-    TagsList
+    TagsList,
+    FlexSearch
   }
 }
 </script>
